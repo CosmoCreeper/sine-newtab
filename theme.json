@@ -1,0 +1,7 @@
+{
+  "name": "Sine NewTab",
+  "description": "A Sine-styled new tab page.",
+  "style": {
+    "content": "userContent.css"
+  }
+}
