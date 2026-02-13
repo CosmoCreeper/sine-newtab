@@ -1,0 +1,316 @@
+@-moz-document url(about:newtab) {
+    body {
+        background: transparent !important;
+        font-family: "DM Mono" !important;
+    }
+
+    .wordmark {
+        align-items: center !important;
+        display: flex !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        user-select: none !important;
+        background: none !important;
+    }
+
+    .wordmark::before {
+        content: "Sine";
+    }
+
+    .search-handoff-button {
+        background: rgba(255, 255, 255, 0.1) !important;
+        margin-inline-start: 0 !important;
+        padding: 0 !important;
+        padding-left: 20px !important;
+    }
+
+    .fake-caret {
+        inset-inline-start: 20px !important;
+    }
+
+    .customize-menu {
+        height: 95vh !important;
+        position: fixed !important;
+        top: 50% !important;
+        translate: 0% -50% !important;
+        right: 16px !important;
+        background: transparent !important;
+        border: 2px solid rgba(255, 255, 255, 0.3) !important;
+        border-radius: 8px !important;
+    }
+
+    .customize-menu.customize-animate-enter-done {
+        box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.2) !important;
+        margin: 0 !important;
+        backdrop-filter: blur(200px) !important;
+    }
+
+    .close-button-wrapper {
+        background-color: transparent !important;
+    }
+
+    .customize-menu.customize-animate-exit-done {
+        color: var(--newtab-text-primary-color) !important;
+        width: 432px !important;
+        inset-block: 0 !important;
+        inset-inline-end: 0 !important;
+        z-index: 1001 !important;
+        padding-block: 0 var(--space-large) !important;
+        padding-inline: var(--space-large) !important;
+        overflow: auto !important;
+        transform: translateX(100%) !important;
+        visibility: hidden !important;
+        cursor: default !important;
+        border: 2px solid rgba(255, 255, 255, 0.3) !important;
+    }
+
+    .personalize-button {
+        padding: 18px !important; 
+        transition: all 200ms ease !important; 
+        border-width: 10px !important;
+        border-style: solid !important; 
+        border-image: linear-gradient(to bottom right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.1)) 1 !important; 
+        border-radius: 20px !important;
+        border-color: transparent !important;
+        background-origin: border-box !important;
+        background-clip: content-box, border-box !important;
+    }
+
+    .personalize-button:hover {
+        background-color: rgba(255, 255, 255, 0.1) !important;
+    }
+}
+
+@-moz-document domain("edclub.com") {
+
+    /*.theme-kingfish .typable ._vld {
+        background: radial-gradient(#fff, #a6cff3);
+        text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    }
+    
+    .theme-kingfish .typable ._ervld {
+        background: radial-gradient(#fff, #ffeb3b);
+        text-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    }
+    
+    .theme-kingfish .typable ._err {
+        background: radial-gradient(#fff, #ffcccc);
+        text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    }*/
+    
+    .profile-name {
+        visibility: hidden;
+    }
+    
+    .profile-name:after {
+        visibility: visible;
+        content: "EdClub+"
+    }
+    
+    .disable-ads-banner {
+        display: none !important;
+    }
+    
+    .catalog-item {
+        border-radius: 10px !important;
+    }
+    
+    .lp-card {
+        border-radius: 10px;
+    }
+    
+    .lp-card h4 {
+        padding-bottom: 15px;
+    }
+    
+    .lp-card h5 {
+        display: none;
+    }
+    
+    .lp-card.list-view {
+        padding: 10px;
+    }
+    
+    .lp-card-img img {
+        border-radius: 5px;
+    }
+    
+    .get-more-button, .btn-default, .btn-primary {
+        border-radius: 10px;
+    }
+    
+    .btn-primary {
+        box-shadow: 0 4px #047cbf;
+        
+    }
+    
+    .btn-primary:hover, .btn-default:hover {
+        box-shadow: none;
+        transform: translateY(3px);
+    }
+    
+    .btn-default {
+        box-shadow: 0 4px #aaa;
+    }
+    
+    .get-more-button, .btn-group-xs > .btn, .btn-xs {
+        box-shadow: none;
+        transform: none !important;
+    }
+    
+    .catalog-card-action-container {
+        padding: 10px;
+        padding-right: 0;
+    }
+    
+    .lp-card-menu {
+        top: 50% !important;
+    }
+    
+    .box {
+        border-radius: 10px !important;
+        transition: all 100ms ease !important;
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.5) !important;
+        transform: translateY(3px) !important;
+    }
+    
+    .box:hover {
+        box-shadow: none !important;
+    }
+    
+    .is_unlocked .box {
+        box-shadow: 0 5px #aaa !important;
+        transform: translateY(0) !important;
+    }
+    
+    .is_unlocked .box:hover {
+        box-shadow: none !important;
+        transform: translateY(3px) !important;
+    }
+    
+    .btn-group-xs > .btn, .btn-xs {
+        border-radius: 5px;
+    }
+    
+    .edmodal-box {
+        border-radius: 10px;
+        scrollbar-width: none;
+    }
+    
+    .edmodal-box li span {
+        background: transparent !important;
+    }
+    
+    .edmodal-box::-webkit-scrollbar { 
+        display: none;
+    }
+    
+    .edmodal-x {
+        padding: 20px;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .edmodal-x:hover {
+        border: 1px solid black;
+    }
+    
+    .hint--yel img {
+        transition: all 100ms ease;
+    }
+    
+    .hint--yel:hover img {
+        transform: scale(1.2);
+    }
+    
+    .lp-card-menu .edicon-settings {
+        color: black !important;
+    }
+    
+    .hdrlt.compact {
+        background: transparent !important;
+        border: none;
+    }
+    
+    .drop-banner {
+        display: none;
+    }
+    
+    #root div:has(> .typing-results) > .hdrlt.compact {
+        color: white !important;
+    }
+    
+    .navbar {
+        border-radius: 10px;
+        margin-top: 5px;
+        width: 1250px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .edmodal {
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(5px);
+    }
+    
+    #root div:has(> #instructions) > .hdrlt.compact {
+        color: black !important;
+    }
+    
+    #instruction .boxed-typing-lines .boxed-line > span[style*="transform: translate(0px)"] {
+        border-radius: 15px;
+    }
+    
+    #instruction .boxed-typing-lines .boxed-line > span {
+        border-radius: 10px;
+        transition: all 100ms ease-out;
+    }
+    
+    .cursor {
+        border-radius: 2px;
+    }
+    
+    .cursor[style*="right: 0px"] {
+        border-radius: 30px;
+    }
+    
+    .tpmodes.normal ._fcs {
+        border-radius: 2px !important;
+    }
+    
+    .progress-bar-container, .progress-bar-fill {
+        border-radius: 10px;
+    }
+    
+    .ed-paper {
+        border-radius: 10px;
+    }
+    
+    .badge-card {
+        border-radius: 8px !important;
+        transition: all 200ms ease;
+    }
+    
+    .badge-card:hover {
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    }
+    
+    .badge-card.in-active:hover {
+        box-shadow: none;
+    }
+    
+    @media (max-width: 1275px) {
+        .navbar {
+            border-radius: 0;
+            margin-top: 0;
+            width: 100vw;
+            margin-left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
